@@ -1,0 +1,12 @@
+SELECT 
+	st.stay,
+	COUNT(*) AS count_int,
+	ROUND(AVG(st.todep), 2) AS average_phq,
+	ROUND(AVG(st.tosc), 2) AS average_scs,
+	ROUND(AVG(st.toas), 2) AS average_as
+FROM public.students st
+WHERE st.inter_dom = 'Inter'
+GROUP BY st.stay
+ORDER BY st.stay DESC
+LIMIT 9
+
