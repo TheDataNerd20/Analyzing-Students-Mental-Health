@@ -1,41 +1,46 @@
-# Analyzing-Students-Mental-Health
+# 📊 International Students Mental Health Analysis
 
-📊 International Students Mental Health Analysis (SQL Project)
-This project analyzes how the length of stay affects the mental health of international students using SQL. It explores trends in depression, social connectedness, and acculturative stress to understand how students adapt over time.
+## 📌 Overview
+This project analyzes how the **length of stay** affects the **mental health of international students** using a real-world dataset from a Japanese university study conducted in 2018. The analysis focuses on identifying trends in depression, social connectedness, and acculturative stress as students spend more time in a foreign country.
 
-📌 Project Overview
-This project analyzes how the length of stay in a foreign country affects the mental health of international students, using a real dataset from a Japanese university study (2018).
-The goal is to uncover whether students adapt over time by examining trends in:
-Depression levels (PHQ-9)
-Social connectedness (SCS)
-Acculturative stress (ASISS)
+---
 
-🎯 Business Problem
-International students often face challenges such as:
-Cultural adjustment
-Social isolation
-Academic pressure
-This project answers:
-❓ Does staying longer in a host country improve mental health outcomes?
+## 🎯 Objective
+The main objective of this project is to determine whether longer stays in a host country help international students:
+- Reduce depression levels (PHQ-9)
+- Improve social connectedness (SCS)
+- Decrease acculturative stress (ASISS)
 
-🛠️ Tech Stack
-PostgreSQL
-SQL (Aggregation, Filtering, Grouping)
-Data Analysis Concepts
+---
 
-📂 Dataset Details
-Column	Description
-inter_dom	International or Domestic student
-stay	Length of stay (years)
-todep	Depression score (PHQ-9)
-tosc	Social connectedness score
-toas	Acculturative stress score
+## 🛠️ Tech Stack
+- **PostgreSQL**
+- **SQL (Aggregation, Filtering, Grouping)**
+- Data Analysis Techniques
 
-🔍 SQL Approach
-Filtered international students only
-Grouped data by stay
-Calculated:
-Total students per group
-Average mental health scores
-Rounded values to 2 decimal places
-Sorted results by stay (descending)
+---
+
+## 📂 Dataset Description
+
+| Column Name | Description |
+|------------|-------------|
+| inter_dom  | Student type (International or Domestic) |
+| stay       | Length of stay (in years) |
+| todep      | Depression score (PHQ-9 test) |
+| tosc       | Social connectedness score (SCS test) |
+| toas       | Acculturative stress score (ASISS test) |
+
+---
+
+## 🔍 Methodology
+- Filtered the dataset to include only **international students**
+- Grouped data based on **length of stay (`stay`)**
+- Calculated:
+  - Number of students per group (`count_int`)
+  - Average depression score (`average_phq`)
+  - Average social connectedness score (`average_scs`)
+  - Average acculturative stress score (`average_as`)
+- Rounded all average values to **two decimal places**
+- Sorted the results by **length of stay in descending order**
+
+---
