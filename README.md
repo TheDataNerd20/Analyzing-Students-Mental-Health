@@ -9,6 +9,7 @@ The goal is to uncover whether students adapt over time by examining trends in:
 Depression levels (PHQ-9)
 Social connectedness (SCS)
 Acculturative stress (ASISS)
+
 🎯 Business Problem
 International students often face challenges such as:
 Cultural adjustment
@@ -16,10 +17,12 @@ Social isolation
 Academic pressure
 This project answers:
 ❓ Does staying longer in a host country improve mental health outcomes?
+
 🛠️ Tech Stack
 PostgreSQL
 SQL (Aggregation, Filtering, Grouping)
 Data Analysis Concepts
+
 📂 Dataset Details
 Column	Description
 inter_dom	International or Domestic student
@@ -27,6 +30,7 @@ stay	Length of stay (years)
 todep	Depression score (PHQ-9)
 tosc	Social connectedness score
 toas	Acculturative stress score
+
 🔍 SQL Approach
 Filtered international students only
 Grouped data by stay
